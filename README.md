@@ -170,6 +170,9 @@ def findin_countrynames( string_input ):
 ```
 
 ### 🧸💬 Re-name country name.
+
+💃( 👩‍🏫 )💬 This function will require even it is used of string expression and regular expression but the final report is present at the customer end as they can create feedback reports from the result and validate by joining them and work on internal and external data source validation. This function is to make sure that external sources or internal sources have the same expectations for working comfortably for customers. </br>
+
 ```
 def renamecountry_record( DATA ):
 
