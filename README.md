@@ -32,7 +32,7 @@ DekDee
 ### 🧸💬 Communication message, using by C and Python to create communication communicates the message as a string.
 
 🐑💬 ➰ When debugging some programmers ask me why I am using string columns as communication message templates, that is because of my understanding communication messages match string conversations working for services and programs in the solution. I had someone help me with development and he proposed the idea of using a dictionary for communication messages. </br> 
-🐆💬 I have knowledge in telecommunication and this is from C programming master. </br> 
+🐆🐾💬 I have knowledge in telecommunication and this is from C programming master. </br> 
 🥺💬 I am a fan of the developer's website, I read and saw that you compared for column string method and dictionary about 15 years ago and compared of composed ```message communication APIs``` they had developed. </br> 
 🐐💬 This course is a good course he added programming and experience into assignments you need to learn and follow. </br>
 
