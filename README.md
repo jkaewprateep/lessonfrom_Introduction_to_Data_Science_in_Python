@@ -140,6 +140,8 @@ corr, pval=stats.pearsonr(new_df["column 1"], new_df["column 2"])
 
 ### 🧸💬 Data cleaning functions.
 
+🐑💬 ➰ It is important to find and match data for tabular data information and data joining, filters, selection, and aggregation are easier in the later step because of no duplicated conditions to create. </br>
+
 ### 🧸💬 Digits remover.
 ```
 def verify_countrynamestring( DATA ):
