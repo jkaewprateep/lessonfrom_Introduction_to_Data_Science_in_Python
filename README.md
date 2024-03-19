@@ -263,6 +263,7 @@ def answer_eleven():
 <p align="center" width="100%">
     <img width="40%" src="https://github.com/jkaewprateep/lessonfrom_Introduction_to_Data_Science_in_Python/blob/main/02.png">
 </p>
+* The picture from the Internet.
 
 - - -
 
