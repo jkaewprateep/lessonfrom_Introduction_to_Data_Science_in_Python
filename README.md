@@ -135,3 +135,42 @@ import scipy.stats as stats
 # 🧸💬 Find correlation and possibility value from data in column 1 and column 2.
 corr, pval=stats.pearsonr(new_df["column 1"], new_df["column 2"])
 ```
+
+### 🧸💬 Create a custom dataset from a custom function.
+
+### 🧸💬 Data cleaning functions.
+
+### 🧸💬 Digits remover.
+```
+def verify_countrynamestring( DATA ):
+    
+    DATA["Country"] = DATA["Country"].apply(lambda x: remove_digits(x))
+    
+    return DATA
+```
+
+### 🧸💬 Country name validator.
+```
+def findin_countrynames( string_input ):
+    
+    country_name =[ "China", "United States", "Japan", "United Kingdom", "Russian Federation", ... ]
+
+    if string_input.strip() in country_name :
+        return True;
+    else:
+        return False;
+```
+
+### 🧸💬 Re-name country name.
+```
+def renamecountry_record( DATA ):
+
+    current_countryname = ["Republic of Korea", "Korea, Rep.", "United States of America", "United States", ... ];
+    
+    new_countryname = ["South Korea", "South Korea", "United States", "United States", "United Kingdom", ... ];
+    
+    for idx, countryname in enumerate(current_countryname):
+        DATA.loc[DATA['Country'] == current_countryname[idx], "Country"] = new_countryname[idx]
+    
+    return DATA
+```
