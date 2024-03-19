@@ -251,3 +251,9 @@ def answer_eleven():
     
     return result;
 ```
+
+### 🧸💬 Final evaluation from the dataset.
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Introduction_to_Data_Science_in_Python/blob/main/01.png">
+</p>
