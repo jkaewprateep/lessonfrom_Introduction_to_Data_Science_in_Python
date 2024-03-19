@@ -342,3 +342,20 @@ def nhl_correlation():
     # 🧸💬 Return the target correlation number.
     return stats.pearsonr(population_by_region, win_loss_by_region)[0]
 ```
+
+## 🐑💬 ➰ Working with the last question, this University's name is the endurance work hackers they present of correlation brute force hacking method.
+
+```
+new_nbadf = remove_index(new_nbadf, 0);
+new_nbadf = remove_index(new_nbadf, 2);
+new_nbadf = remove_index(new_nbadf, 1);
+new_nbadf = remove_index(new_nbadf, 3);
+
+new_nbadf = remove_index(new_nbadf, 4);
+new_nbadf = remove_index(new_nbadf, 5);
+
+new_nfldf = remove_index(new_nfldf, 6);
+new_nfldf = remove_index(new_nfldf, 21);
+new_nfldf = remove_index(new_nfldf, 27);
+new_nfldf = remove_index(new_nfldf, 11);
+```
