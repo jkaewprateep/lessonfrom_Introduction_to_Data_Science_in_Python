@@ -68,6 +68,8 @@ assert one_item in logs(), "Sorry, this item should be in the log results, check
 
 ### 🥺💬 I had took a time on the assignment 2 a lot because I need to read from the requirements data from PDF file and working on assumption before complete the questions assignments and submit at the first round before found that is not the same expectations, now we have guide scopes for second submitting.
 
+🐑💬 ➰ His notes is long and messy but that is because of he study from the examples and working documents. There is no right or wrong questions in real-life we need to summarize, proved and evaluation before present to customer and evaluation from their assumption for development. </br>
+
 ```
 ###########################################################
 # CBF_01 – child ever fed breast milk
