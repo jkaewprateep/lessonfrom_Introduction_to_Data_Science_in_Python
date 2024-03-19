@@ -212,3 +212,40 @@ def ScimEn_DATA():
         
     return DATA, DATA.shape[0];
 ```
+
+### 🧸💬 Using the lambda function for the external function process results in the same as the internal process is the possible way by applying lambda function.
+
+🦤💬 There are matrix summary, and aggregation functions from Pandas, Numpy library, and sci-kit library and one way to complete this requirement without transforming data or creating a counter is to access an external function from the lambda function. </br>
+
+```
+def answer_eleven():
+    # This function should return a DataFrame with index named Continent 
+    # ['Asia', 'Australia', 'Europe', 'North America', 'South America'] and columns ['size', 'sum', 'mean', 'std']
+    import statistics;
+    
+    ContinentDict  = {'China':'Asia', 
+              'United States':'North America', 
+              'Japan':'Asia', 
+              'United Kingdom':'Europe', 
+              'Russian Federation':'Europe', 
+              'Canada':'North America', 
+              'Germany':'Europe', 
+              'India':'Asia',
+              'France':'Europe', 
+              'South Korea':'Asia', 
+              'Italy':'Europe', 
+              'Spain':'Europe', 
+              'Iran':'Asia',
+              'Australia':'Australia', 
+              'Brazil':'South America'};
+
+    dataset = answer_one();
+    dataset["Continents"] = dataset.index.to_series().map(ContinentDict);
+    dataset["Estimates population"] = dataset["Energy Supply"].astype("float") / dataset["Energy Supply per Capita"].astype("float");
+    
+    result = dataset.set_index("Continents").groupby( "Continents" )["Estimates population"].agg([ ('size', lambda x: np.size(x)), ('sum', lambda x: np.nansum(x)) ,
+                                                                                                   ('mean', lambda x: np.nanmean(x)), ('std', lambda x: np.nanstd(x))
+                                                                                                 ]);
+    
+    return result;
+```
