@@ -258,9 +258,17 @@ def answer_eleven():
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Introduction_to_Data_Science_in_Python/blob/main/01.png">
 </p>
 
+👨🏻‍🏫💬 We used C programming language in communications instruments, there are no actual continuous but discrete values with intelligence scopes. </br>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Introduction_to_Data_Science_in_Python/blob/main/02.png">
+</p>
+
 - - -
 
 ### 🧸💬 Custom dataset and the datasets coefficients, find solution for source input data for prediction function and evaluation method.
+
+🐑💬 ➰ We start by creating a custom dataset function and it can be used within the working project in Jupiter notebook, reloading the dataset value or transforming only calling the function. </br>
+🦭💬 
 
 ### 🧸💬 Create a custom dataset.
 
