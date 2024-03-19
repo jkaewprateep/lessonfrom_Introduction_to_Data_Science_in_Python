@@ -111,3 +111,15 @@ assert one_item in logs(), "Sorry, this item should be in the log results, check
 #
 ###########################################################  
 ```
+
+### 🧸💬  Eumurates is a convenience way from their experience.
+
+```
+for idx, item in enumerate(EDUC1_data["EDUC1"]):
+    EDCU1 = _temp["EDUC1"].loc[idx];
+    number = _temp["Number"].loc[idx];
+    ratios = number / _total
+    data[label[idx]] = ratios;
+
+return data
+```
