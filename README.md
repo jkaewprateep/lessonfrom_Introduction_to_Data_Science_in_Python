@@ -138,6 +138,8 @@ corr, pval=stats.pearsonr(new_df["column 1"], new_df["column 2"])
 
 ### 🧸💬 Create a custom dataset from a custom function.
 
+🦭💬 Data input validation and aggregation are important in data processing, these tasks are performed to validate data and tracking of data changes and re-formatting ```verify_countrynamestring```, ```findin_countrynames```, ```renamecountry_record```. By each step is a common and transparent process, adding logging and notification methods is possibly the same as re-use some external sources of data for transform and support of data matching, joining, and data aggregation methods. </br>
+
 ### 🧸💬 Data cleaning functions.
 
 🐑💬 ➰ It is important to find and match data for tabular data information and data joining, filters, selection, and aggregation are easier in the later step because of no duplicated conditions to create. </br>
@@ -184,4 +186,29 @@ def renamecountry_record( DATA ):
         DATA.loc[DATA['Country'] == current_countryname[idx], "Country"] = new_countryname[idx]
     
     return DATA
+```
+
+### 🧸💬 A sample of a custom dataset function.
+
+```
+def ScimEn_DATA():
+
+    DATA = pd.read_excel(io=filename_2)
+    colnames = ["Rank","Country","Documents","Citable documents","Citations","Self-citations","Citations per document","H index"];
+    for i in range(len(colnames)):
+        DATA.rename(columns={i: colnames[i]}, inplace=True)
+        
+    ### Remove none country items
+    DATA["boolean"] = DATA["Country"].apply(lambda x: remove_nonecountryrecordfromlist(x))
+    DATA = DATA[DATA["boolean"] == True];
+    DATA = DATA[colnames]
+    ###
+        
+    DATA = renamecountry_record( DATA );
+    DATA = verify_countrynamestring( DATA );
+
+    for item in colnames[2:]:
+        DATA[ item ] = DATA[ item ].apply(lambda x: convert_digits(x))
+        
+    return DATA, DATA.shape[0];
 ```
