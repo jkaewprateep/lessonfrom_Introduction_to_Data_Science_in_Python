@@ -257,3 +257,56 @@ def answer_eleven():
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Introduction_to_Data_Science_in_Python/blob/main/01.png">
 </p>
+
+- - -
+
+### 🧸💬 Custom dataset and the datasets coefficients, find solution for source input data for prediction function and evaluation method.
+
+### 🧸💬 Create a custom dataset.
+
+```
+def create_nfldataset( ):
+    
+    DATAtype = { "index": "int", "DSRS": "float", "L": "int", "League": "string", "MoV": "float", "OSRS": "float", "PA": "string", "PD": "int", "PF": "int", "SRS": "float", 
+     "SoS": "float", "T": "int", "W": "int", "W-L%": "float", "team": "string", "year": "int", "Index": "int", "Cityname": "string" };
+ 
+    nfl_df = pd.read_csv(filename_4)                                                      # 🧸💬 read data from .csv file.
+
+    new_nfldf = nfl_df;                                                                   # 🧸💬 saved data to instant dataset.
+    new_nfldf["team"] = new_nfldf["team"].apply(lambda x : remove_unchar(x) );            # 🧸💬 Removed none character from the input.
+    new_nfldf["Index"] = new_nfldf.index                                                  # 🧸💬 Create index column from running index.
+
+    # 🧸💬 Verify the city name input.
+    new_nfldf["Cityname"] = new_nfldf["team"].apply(lambda x : nfl_find_cityname_fromteamname(x) );
+    # 🧸💬 Verify the area name input.     
+    new_nfldf = new_nfldf[~new_nfldf["team"].isin(["AFC North", "AFC South", "AFC West", "AFC East", "NFC East", 
+                                                   "NFC North", "NFC South", "NFC West"])]
+    new_nfldf = new_nfldf[new_nfldf["year"] == 2018]                                      # 🧸💬 Data records selection.   
+    new_nfldf = new_nfldf.reset_index();                                                  # 🧸💬 Reset index and create new column name index.
+    new_nfldf["Index"] = new_nfldf.index                                                  # 🧸💬 Assigned new index to index column.
+
+    # 🧸💬 Read and assign key and value to new data column associated with keys name.
+    ############################################################################
+    ###
+    for item in DATAtype.items():
+        key, value = item
+        new_nfldf[key] = new_nfldf[key].astype(value);
+    ###
+    ############################################################################    
+    
+    new_nfldf['team_ville'] = new_nfldf['team']                                           # 🧸💬 Assign team_ville column with team values.
+    # 🧸💬 Mapping function to assign category value into team_ville column.
+    new_nfldf['team_ville'] = new_nfldf['team_ville'].map({'New England Patriots':'Boston', ... });
+    
+    cities=pd.read_html(filename_5)[1]                                                    # 🧸💬 Create cities dataset from target filename.
+    cities=cities.iloc[:-1,[0,3,5,6,7,8]]                                                 # 🧸💬 Selected columns.
+
+    # 🧸💬 Merge dataset by the team_ville column and metropolitan area.
+    new_nfldf = pd.merge(new_nfldf, cities, left_on= "team_ville", right_on= "Metropolitan area")
+    # 🧸💬 Assign new column names.
+    new_nfldf = new_nfldf[["team", "W-L%", "Metropolitan area", "Population (2016 est.)[8]", "year"]]
+    # 🧸💬 Dataset columns selection.
+    new_nfldf.columns = ["team", "W/L", "Metropolitan area", "Population", "year"]
+
+    return new_nfldf
+```
