@@ -155,6 +155,9 @@ def verify_countrynamestring( DATA ):
 ```
 
 ### 🧸💬 Country name validator.
+
+🐐💬 Monitoring and validate of the input data and aware of updated data from the dataset can be performed on this function, the observation function. Reading though the input validator can create of notification or message log for notice of change from the online sources and update from internal sources if there any change of the scopes will be notified to handles in the correct way or information. </br>
+
 ```
 def findin_countrynames( string_input ):
     
