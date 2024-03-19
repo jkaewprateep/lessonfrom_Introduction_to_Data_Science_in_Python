@@ -216,7 +216,8 @@ def ScimEn_DATA():
 ### 🧸💬 Using the lambda function for the external function process results in the same as the internal process is the possible way by applying lambda function.
 
 🦤💬 There are matrix summary, and aggregation functions from Pandas, Numpy library, and sci-kit library and one way to complete this requirement without transforming data or creating a counter is to access an external function from the lambda function. </br>
-💃( 👩‍🏫 )💬 Once they called a hacker function, this hacks of the Pandas and working library function by accessing external function ability from its working memory. </br>
+💃( 👩‍🏫 )💬 Once they called a hacker function, this hacks the Pandas and working library function by accessing external function ability from its working memory. </br>
+👨🏻‍🏫💬 Otherwise you need to access the evaluation matrixes by creating a custom class because you need a class initiated to work with external functions. </br>
 
 ```
 def answer_eleven():
