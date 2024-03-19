@@ -28,3 +28,21 @@ _temp = re.findall(expression, simple_string)
 ```
 DekDee
 ```
+
+### 🧸💬 Communication message, using by C and Python to create communication communicates the message as a string.
+
+```
+message = {}
+if len(hostname.strip()) > 0:
+    message["host"] = hostname.strip();
+else:
+    message["host"] = '-'
+if len(username.strip()) > 0:
+    message["user_name"] = username.strip();
+else:
+    message["user_name"] = '-'
+message["time"] = temp;
+message["request"] = request.strip();
+
+result.append(message)
+```
