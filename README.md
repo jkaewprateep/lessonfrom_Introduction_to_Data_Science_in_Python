@@ -269,7 +269,7 @@ def answer_eleven():
 ### 🧸💬 Custom dataset and the datasets coefficients, find solution for source input data for prediction function and evaluation method.
 
 🐑💬 ➰ We start by creating a custom dataset function and it can be used within the working project in Jupiter notebook, reloading the dataset value or transforming only calling the function. </br>
-🦭💬 
+🦭💬 Working behavior by dividing reusable paths and customizable parts for template working helps with understanding and implementing projects in the future. </br>
 
 ### 🧸💬 Create a custom dataset.
 
