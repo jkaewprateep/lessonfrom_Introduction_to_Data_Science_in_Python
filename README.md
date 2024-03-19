@@ -35,6 +35,7 @@ DekDee
 🐆🐾💬 I have knowledge in telecommunication and this is from C programming master. </br> 
 🥺💬 I am a fan of the developer's website, I read and saw that you compared for column string method and dictionary about 15 years ago and compared of composed ```message communication APIs``` they had developed. </br> 
 🐐💬 This course is a good course he added programming and experience into assignments you need to learn and follow. </br>
+👧💬 🎈 He says he do not know what is the APIS he doing but that creates influence work and continues...  </br>
 
 ```
 message = {}
