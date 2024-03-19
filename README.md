@@ -123,3 +123,15 @@ for idx, item in enumerate(EDUC1_data["EDUC1"]):
 
 return data
 ```
+
+### 🧸💬 Correlation value and possibility values.
+
+🐑💬 ➰ This is a fast way to select variables to work with regression problems to find solutions by varying the input variables. </br>
+👧💬 🎈 We have read about confusion matrix, ANOVA, F-scores, and variance, and the correlation is a single variable determination method and they can work with multiple variables by selection method.  </br>
+
+```
+import scipy.stats as stats
+
+# 🧸💬 Find correlation and possibility value from data in column 1 and column 2.
+corr, pval=stats.pearsonr(new_df["column 1"], new_df["column 2"])
+```
