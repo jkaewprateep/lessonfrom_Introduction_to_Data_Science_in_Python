@@ -143,6 +143,9 @@ corr, pval=stats.pearsonr(new_df["column 1"], new_df["column 2"])
 🐑💬 ➰ It is important to find and match data for tabular data information and data joining, filters, selection, and aggregation are easier in the later step because of no duplicated conditions to create. </br>
 
 ### 🧸💬 Digits remover.
+
+🦭💬 Expectations of the name of the country, streets, display and representing name and geographic and world news play some condition require. In some example of the Republic of Congo and Laos, they had many of their names present in experiment datasets and needed to be matched for the data aggregation function to work correctly.  </br>
+
 ```
 def verify_countrynamestring( DATA ):
     
