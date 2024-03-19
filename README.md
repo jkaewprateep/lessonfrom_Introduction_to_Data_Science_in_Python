@@ -65,3 +65,46 @@ one_item={'host': '146.204.224.152',
   'request': 'POST /incentivize HTTP/1.1'}
 assert one_item in logs(), "Sorry, this item should be in the log results, check your formatting"
 ```
+
+### 🥺💬 I had took a time on the assignment 2 a lot because I need to read from the requirements data from PDF file and working on assumption before complete the questions assignments and submit at the first round before found that is not the same expectations, now we have guide scopes for second submitting.
+
+```
+###########################################################
+# CBF_01 – child ever fed breast milk
+# Yes : 1
+# No  : 2
+# Don’t know : 3
+# Missing : 4
+# * Data has 4 types 
+# * Mapping by assuming order label priority
+# Sample = { 1, 2, 77, 99}
+# ---------------------------------------------------------
+# VFC_ORDER – do child’s providers order vaccines for
+# children from state/local health department? (introduced
+# in 2006)
+# All providers : 1.0
+# Some but not all providers : 2.0
+# No providers : 3.0
+# Unknown : 4.0
+# * Data has 4 types 
+# * Mapping by assuming order label priority
+# Sample = { 1.0, 2.0, 3.0, 4.0, NA}
+# ---------------------------------------------------------
+# REGISTRY - is based on responses to IHQ question 7 and 
+# indicates whether the child’s vaccination
+# providers reported the child’s vaccinations to a local 
+# or state immunization registry (also known as an
+# Immunization Information System, or IIS).
+# all providers : 1
+# some but possibly or definitely not all providers : 2
+# no providers : 3
+# unknown : 4
+# * Data has 4 types 
+# * Mapping by assuming order label priority
+# Sample = { 1.0, 2.0, 3.0, 4.0, NA}
+# ---------------------------------------------------------
+# SEQNUMHH and SEQNUMC are the unique household and child identifiers
+# variable identifies the children with adequate provider data (PDAT=1)
+#
+###########################################################  
+```
