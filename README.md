@@ -33,23 +33,24 @@ DekDee
 
 🐑💬 ➰ When debugging some programmers ask me why I am using string columns as communication message templates, that is because of my understanding communication messages match string conversations working for services and programs in the solution. I had someone help me with development and he proposed the idea of using a dictionary for communication messages. </br> 
 🐆💬 I have knowledge in telecommunication and this is from C programming master. </br> 
-🥺💬 I am a fan of the developer's website, I read and saw that you compared for column string method and dictionary about 15 years ago and compared of composed message communication APIs they had developed. </br> 
+🥺💬 I am a fan of the developer's website, I read and saw that you compared for column string method and dictionary about 15 years ago and compared of composed ```message communication APIs``` they had developed. </br> 
 🐐💬 This course is a good course he added programming and experience into assignments you need to learn and follow. </br>
 
 ```
 message = {}
-if len(hostname.strip()) > 0:
+if len(hostname.strip()) > 0:                          # 🧸💬 Enclosed variable value fro message communication attributes.
     message["host"] = hostname.strip();
 else:
     message["host"] = '-'
-if len(username.strip()) > 0:
+if len(username.strip()) > 0:                          # 🧸💬 Enclosed variable value fro message communication attributes.
     message["user_name"] = username.strip();
 else:
     message["user_name"] = '-'
 message["time"] = temp;
-message["request"] = request.strip();
+message["request"] = request.strip();                  # 🧸💬 Enclosed variable value fro message communication attributes.
 
-result.append(message)
+result.append(message)                                 # 🧸💬 Composed message communication for send on current channel or
+                                                       # saved to console.log.
 ```
 
 ### 🧸💬 From the course validation method.
@@ -61,5 +62,5 @@ one_item={'host': '146.204.224.152',
   'user_name': 'feest6811',
   'time': '21/Jun/2019:15:45:24 -0700',
   'request': 'POST /incentivize HTTP/1.1'}
-assert one_item in logs(), "Sorry, this item should be in the log results, check your formating"
+assert one_item in logs(), "Sorry, this item should be in the log results, check your formatting"
 ```
