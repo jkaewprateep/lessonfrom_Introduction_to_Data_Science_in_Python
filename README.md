@@ -51,3 +51,15 @@ message["request"] = request.strip();
 
 result.append(message)
 ```
+
+### 🧸💬 From the course validation method.
+
+```
+assert len(logs()) == 979
+
+one_item={'host': '146.204.224.152',
+  'user_name': 'feest6811',
+  'time': '21/Jun/2019:15:45:24 -0700',
+  'request': 'POST /incentivize HTTP/1.1'}
+assert one_item in logs(), "Sorry, this item should be in the log results, check your formating"
+```
