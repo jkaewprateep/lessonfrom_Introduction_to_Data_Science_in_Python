@@ -320,3 +320,23 @@ def create_nfldataset( ):
 
     return new_nfldf
 ```
+
+### 🧸💬 Working with the problem with the customization part of the project, we implemented it in the Jupiter notebook.
+
+```
+def nhl_correlation(): 
+   
+    new_nhldf = create_nhldataset( );
+    new_nhldf = remove_index(new_nhldf, 0);
+    new_nhldf = remove_index(new_nhldf, 18);
+    new_nhldf = remove_index(new_nhldf, 21);
+    ###
+    
+    win_loss_by_region = np.asarray(new_nhldf["W/L"], dtype=np.float32);
+    population_by_region = np.asarray(new_nhldf["Population"], dtype=np.float32);
+    
+    assert len(population_by_region) == len(win_loss_by_region), "Q2: Your lists must be the same length"
+    assert len(population_by_region) == 28, "Q2: There should be 28 teams being analysed for NBA"
+    
+    return stats.pearsonr(population_by_region, win_loss_by_region)[0]
+```
