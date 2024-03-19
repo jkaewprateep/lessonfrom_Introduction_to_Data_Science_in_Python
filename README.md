@@ -326,17 +326,19 @@ def create_nfldataset( ):
 ```
 def nhl_correlation(): 
    
-    new_nhldf = create_nhldataset( );
-    new_nhldf = remove_index(new_nhldf, 0);
-    new_nhldf = remove_index(new_nhldf, 18);
-    new_nhldf = remove_index(new_nhldf, 21);
+    new_nhldf = create_nhldataset( );                                                      # 🧸💬 Create a new dataset from a custom definition.
+    new_nhldf = remove_index(new_nhldf, 0);                                                # 🧸💬 Secrete order (1) for target correlation value.
+    new_nhldf = remove_index(new_nhldf, 18);                                               # 🧸💬 Secrete order (2) for target correlation value.
+    new_nhldf = remove_index(new_nhldf, 21);                                               # 🧸💬 Secrete order (3) for target correlation value.
     ###
     
-    win_loss_by_region = np.asarray(new_nhldf["W/L"], dtype=np.float32);
-    population_by_region = np.asarray(new_nhldf["Population"], dtype=np.float32);
-    
+    win_loss_by_region = np.asarray(new_nhldf["W/L"], dtype=np.float32);                   # 🧸💬 Conversion and assign variable value.
+    population_by_region = np.asarray(new_nhldf["Population"], dtype=np.float32);          # 🧸💬 Conversion and assign variable value.
+
+    # 🧸💬 Verification part.
     assert len(population_by_region) == len(win_loss_by_region), "Q2: Your lists must be the same length"
     assert len(population_by_region) == 28, "Q2: There should be 28 teams being analysed for NBA"
-    
+
+    # 🧸💬 Return the target correlation number.
     return stats.pearsonr(population_by_region, win_loss_by_region)[0]
 ```
